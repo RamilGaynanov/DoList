@@ -28,8 +28,8 @@ public class DoListAdapter extends RecyclerView.Adapter<DoListAdapter.DoListView
 
         public DoListViewHolder(@NonNull View itemView) {
             super(itemView);
-            view_foreground = itemView.findViewById(R.id.view_foreground);
-            view_background = itemView.findViewById(R.id.view_background);
+            /*view_foreground = itemView.findViewById(R.id.view_foreground);
+            view_background = itemView.findViewById(R.id.view_background);*/
 
            /* etDoText = (EditText) itemView.findViewById(R.id.do_text);
             etDoText.addTextChangedListener(new TextWatcher() {
@@ -48,8 +48,8 @@ public class DoListAdapter extends RecyclerView.Adapter<DoListAdapter.DoListView
                     data.set(getAdapterPosition(), s.toString());
                 }
             });*/
-            tvDoText = itemView.findViewById(R.id.dolisttext);
-            ImageButton btn = itemView.findViewById(R.id.iBtnDelete);
+            tvDoText = itemView.findViewById(R.id.do_text);
+            /*ImageButton btn = itemView.findViewById(R.id.iBtnDelete);
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -57,14 +57,14 @@ public class DoListAdapter extends RecyclerView.Adapter<DoListAdapter.DoListView
                     data.remove(position);
                     notifyItemRemoved(position);
                 }
-            });
+            });*/
         }
     }
     @NonNull
     @Override
     public DoListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.do_list_row_with_menues, parent, false);
+                .inflate(R.layout.do_list_row, parent, false);
 
         return new DoListViewHolder(itemView);
     }
