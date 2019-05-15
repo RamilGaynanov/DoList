@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/row_background">
+
+        <ImageButton
+            android:id="@+id/iBtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/row_background"
+            android:foreground="@drawable/ic_action_delete"
+            android:src="@drawable/ic_action_delete" />
+
+        <ImageButton
+            android:id="@+id/iBtnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iBtnDelete"
+            android:background="@color/row_background"
+            android:foreground="@drawable/ic_action_done"
+            android:src="@drawable/ic_action_done" />
+
+        <ImageButton
+            android:id="@+id/iBtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/iBtnDone"
+            android:background="@color/row_background"
+            android:foreground="@drawable/ic_action_edit"
+            android:src="@drawable/ic_action_edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/dolisttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</FrameLayout>
