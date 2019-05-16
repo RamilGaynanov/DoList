@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity implements DoListItemTouchHe
 
         new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(mDoList);*/
         //new ItemTouchHelper(new DoListItemTouchHelper(0, ItemTouchHelper.LEFT, this)).attachToRecyclerView(mDoList);
-        new ItemTouchHelper(new SwipeController()).attachToRecyclerView(mDoList);
     }
 
     public void add_row_to_top(View view) {
